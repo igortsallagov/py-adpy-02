@@ -25,11 +25,4 @@ class WikiCountries:
             pair = {name: wiki_page.url}
             with open('countries_wiki_urls.txt', 'a') as outfile:
                 json.dump(pair, outfile, indent=2)
-            print('Now: ', self.i, len(self.data))
             self.i += 1
-
-
-x = WikiCountries()
-
-for country in x:
-    country
