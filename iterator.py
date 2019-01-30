@@ -14,7 +14,7 @@ class WikiCountries:
         return self
 
     def __next__(self):
-        if self.i > len(self.data):
+        if self.i > len(self.data) - 1:
             raise StopIteration
         else:
             name = self.data[self.i]['name']['common']
